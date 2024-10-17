@@ -1,0 +1,309 @@
+/* Обнуление стилей и общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Контейнер для центровки содержимого */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка (фиксированная) */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.header .logo {
+    color: white;
+    font-size: 24px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Главный экран (hero) */
+.hero {
+    background: url('1.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* О компании */
+.about {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-item {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Услуги */
+.services {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматическая сетка */
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.2rem;
+}
+
+
+/* Как мы работаем */
+.timeline {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 40px;
+    border-left: px solid #008CBA;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 80px;
+    width: 100%;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.timeline-content p {
+    margin: 10px 0 0;
+    color: #666;
+}
+
+
+/* Сертификаты */
+.certificates {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.certificates-slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.certificates-slider img {
+    width: 200px;
+    height: auto;
+}
+
+/* Форма заявки */
+.contact-form {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .socials a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
